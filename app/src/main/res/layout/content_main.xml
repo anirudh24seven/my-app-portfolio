@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.anirudh24seven.myappportfolio.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/my_nanodegree_apps"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/title"
+        android:layout_alignRight="@id/title"
+        android:layout_alignStart="@id/title"
+        android:layout_alignEnd="@id/title"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/spotify_streamer"
+            style="@style/OrangeButton"
+            android:onClick="spotifyButtonClicked"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/scores_app"
+            style="@style/OrangeButton"
+            android:onClick="scoresAppButtonClicked"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/library_app"
+            style="@style/OrangeButton"
+            android:onClick="libraryAppButtonClicked"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/build_it_bigger"
+            style="@style/OrangeButton"
+            android:onClick="buildItBiggerButtonClicked"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/xyz_reader"
+            style="@style/OrangeButton"
+            android:onClick="xyzReaderButtonClicked"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/capstone_my_own_app"
+            style="@style/RedButton"
+            android:onClick="capstoneAppButtonClicked"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
